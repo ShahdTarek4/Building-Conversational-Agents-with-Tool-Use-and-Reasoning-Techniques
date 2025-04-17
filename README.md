@@ -159,9 +159,9 @@ Upon execution, the user is prompted to choose between two operational modes:
 
 #### 1️⃣ Basic Agent
 
-**User**: What’s the weather in Paris today?  
+**User**: What’s the weather in Cairo today?  
 **Agent**:  
-- Temperature: 12.3°C (54.1°F)  
+- Temperature: 29.3°C (54.1°F)  
 - Condition: Partly cloudy  
 - Humidity: 65%  
 - Wind Speed: 8.5 kph
@@ -183,16 +183,22 @@ So, the difference between Tokyo and Sydney today is **15.9°C**.
 
 #### 3️⃣ ReAct Agent
 
-**User**: Is it hotter in New York or London right now?  
+**User**: How is the weather in Paris now and will it be hotter in the next 3 days?  
 **Agent**:  
-Thought: I need to find the current temperatures in both New York and London.  
-Action: Use get_current_weather for New York.  
-Observation: New York is at 15.6°C.  
-Thought: Now I need London's temperature.  
-Action: Use get_current_weather for London.  
-Observation: London is at 5.3°C.  
-Thought: Now I can compare the two temperatures.  
-Final Answer: **New York is hotter than London right now, with a temperature difference of 10.3°C.**
+Thought: I need Paris’s current temperature and conditions.
+Action: get_current_weather for Paris.
+Observation: It is currently 15°C with light clouds.
+Thought: Next, I need the forecasted high temperatures for the next three days.
+Action: get_weather_forecast for Paris (3-day).
+Observation:
+
+Day 1 high: 16°C
+
+Day 2 high: 14°C
+
+Day 3 high: 17°C
+Thought: Compare each forecasted high to today’s 15°C.
+Final Answer: Paris is 15°C with light clouds right now, and it will be hotter than today on Day 1 (16°C) and Day 3 (17°C), but slightly cooler on Day 2 (14°C).
 
 ---
 
