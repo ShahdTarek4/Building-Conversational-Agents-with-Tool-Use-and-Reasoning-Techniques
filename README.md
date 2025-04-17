@@ -1,4 +1,4 @@
-# Conversational-Agent
+# Building Conversational Agents with Tool Use and Reasoning Techniques
 
 A conversational assistant that provides weather information using different reasoning strategies: Basic, Chain of Thought (CoT), and ReAct. The assistant interacts with users, retrieves weather data using WeatherAPI, and applies reasoning techniques to improve responses.
 
@@ -26,8 +26,7 @@ cd Conversational-Agent
 
 4️⃣ **Set Up Environment Variables**
 Create a .env file in the project directory and add the following:
-
-MODEL_SERVER=GROQ   # Change to NGU if using NGU API  
+ 
 GROQ_API_KEY=your_groq_api_key  
 GROQ_BASE_URL=your_groq_base_url  
 GROQ_MODEL=your_groq_model_name  
@@ -40,6 +39,6 @@ python conversational_agent.py
 
 You will be prompted to choose an agent type:
 
-1 for Basic Agent
-2 for Chain of Thought (CoT) Agent
-3 for ReAct Agent
+-1 for Basic Agent
+-2 for Chain of Thought (CoT) Agent
+-3 for ReAct Agent
